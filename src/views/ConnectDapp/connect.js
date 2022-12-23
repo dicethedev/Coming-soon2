@@ -46,7 +46,7 @@ const connect = () => {
     } else {
      toast.warning('You need to be holding atleast 5,000,000 (1%) $ALFA tokens before you can continue! Proceed by getting $ALFA tokens', {
      position: toast.POSITION.TOP_CENTER,
-     autoClose: 8000
+     autoClose: 9000
     });
  }
 }
