@@ -9,19 +9,18 @@ import { toast } from 'react-toastify';
 import { ethers } from "ethers";
 import { useNavigate } from "react-router-dom";
 
-import Component2 from '../../components/component2'
+// import Component2 from '../../components/component2'
 
 const connect = () => {
 
-   const [openModal, setOpenModal] = useState(false);
+  //  const [openModal, setOpenModal] = useState(false);
    const { address, isConnected } = useAccount();
    const { open } = useWeb3Modal()
-   const [userAddress, setUserAddress] = useState("");
-
+  
    let navigate = useNavigate();
  
-  // contract address will be change later
-   const contractAddress = "0x5886B66C0B8D049B8B52600c06A24076Baf2C48F";
+  // Alfa Token mainnet address is the contract address here
+   const contractAddress = "0x5609972dd1655455eabc7019b9df15f8d00640ba";
 
   const { data: balanceOfCheck } = useContractRead({
     mode: "recklesslyUnprepared",
@@ -40,11 +39,10 @@ const connect = () => {
 
   //function to enter Dapp
   const enterDapp = () => {
-  //  const balanceOfUser = balance();
     if (balance >= 5000000) {
      navigate('/alpha-teleporthq')
     } else {
-     toast.warning('You need to be holding atleast 5,000,000 (1%) $ALFA tokens before you can continue! Proceed by getting $ALFA tokens', {
+     toast.warning('You need to be holding atleast 5,000,000 (1%) $ALFA tokens before you can continue! Proceed by getting $ALFA token', {
      position: toast.POSITION.TOP_CENTER,
      autoClose: 9000
     });

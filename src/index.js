@@ -11,7 +11,7 @@ import {
 } from "@web3modal/ethereum";
 import { Web3Modal } from "@web3modal/react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { mainnet, arbitrum, avalanche, bsc, optimism, polygon, goerli, polygonMumbai } from "wagmi/chains";
+import { mainnet, arbitrum, avalanche, bsc, optimism, polygon } from "wagmi/chains";
 
 // --------- React Toastify importation ---------
 import { ToastContainer } from 'react-toastify';
@@ -21,7 +21,7 @@ import './style.css'
 import Home from './views/home'
 import ConnectHome from './views/ConnectDapp/connect'
 
-const chains = [ goerli, mainnet, arbitrum, avalanche, bsc, optimism, polygon, polygonMumbai];
+const chains = [ mainnet, arbitrum, avalanche, bsc, optimism, polygon];
 
 // Wagmi client
 const { provider } = configureChains(chains, [
