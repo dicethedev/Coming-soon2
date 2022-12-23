@@ -1,0 +1,71 @@
+.modal {
+     position: absolute;
+     inset: 0% 0% 0% 0%;
+     background-color: var(--dl-color-gray-black);
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     width: 100vw;
+     z-index: 1111111111;
+}
+
+.modal-box {
+     background-color: var(--dl-color-template-themepurple);
+     padding: 2rem;
+     border-radius: .5rem;
+}
+
+.modal-box_heading_imgClose {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--dl-color-template-themepurple);
+     border-radius: 50px;
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+}
+
+.modal-box_heading {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.modal-box_heading p {
+     font-size: 1.2rem;
+     color: #ffffff;
+}
+
+.model-box_wallet {
+     padding: 10px 20px
+}
+
+.model-box_wallet p {
+     background-color: var(--dl-color-template-themepurple);
+     padding: 1rem;
+     border-radius: .5rem;
+     color: #ffffff;
+     font-weight: 500;
+     cursor: pointer;
+     margin-top: 30px;
+}
+
+.modal-box_privacy {
+     margin-top: 30px;
+     padding: 1rem;
+     line-height: 1.2;
+     border: 1px solid #ffffff;
+     border-radius: .5rem;
+     color: #ffffff;
+}
+
+.token-link {
+     transition: 0.3s;
+     font-size: 13px;
+     line-height: 24px;
+     text-decoration: none;
+     margin-top: 20px;
+     color: var(--dl-color-template-themepurple);
+}

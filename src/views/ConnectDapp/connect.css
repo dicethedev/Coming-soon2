@@ -1,0 +1,130 @@
+.connect-container {
+     width: 100%;
+     display: flex;
+     overflow: auto;
+     min-height: 100vh;
+     overflow-x: hidden;
+     flex-direction: column;
+}
+
+.header {
+     width: 100%;
+     height: 20px;
+     text-align: center;
+     background-color: var(--dl-color-template-themepurple);
+}
+
+.logo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+}
+
+.home-logo {
+     width: 148px;
+     height: 125px;
+     object-fit: cover;
+}
+
+.right {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     margin-right: 20px;
+}
+
+.connectButton {
+     margin-top: 30px;
+     background-color: var(--dl-color-template-themepurple);
+     height: 40px;
+     width: 200px;
+     text-align: center;
+     cursor: pointer;
+     color: #ffffff;
+     border-radius: 5px;
+}
+
+.header-text {
+     color: #ffffff;
+     font-size: 11px;
+     font-weight: 300px;
+}
+
+.connect-card {
+     width: 100%;
+     display: flex;
+     max-width: 1200px;
+     align-self: center;
+     text-align: center;
+     margin-top: var(--dl-space-space-sevenunits);
+     align-items: center;
+     flex-direction: column;
+}
+
+.connect-card_container {
+     border: 1px solid var(--dl-color-template-themepurple);
+     position: static;
+     display: grid;
+     height: auto;
+     width: 35%;
+     min-height: auto;
+     grid-template-rows: repeat(5, min-content) 1fr;
+     grid-template-columns: 100%;
+     flex-direction: column;
+}
+
+.text-alfa {
+     color: var(--dl-color-template-themepurple);
+     letter-spacing: 0em;
+     font-style: normal;
+     font-family: Rubik;
+     font-weight: 700;
+     font-size: 32px;
+     text-align: center;
+     margin-top: var(--dl-space-space-twounits);
+     margin-bottom: 5px;
+}
+
+.link {
+     transition: 0.3s;
+     font-size: 13px;
+     text-align: center;
+     text-decoration: none;
+     color: var(--dl-color-template-themepurple);
+}
+
+.token-link {
+     transition: 0.3s;
+     font-size: 13px;
+     line-height: 24px;
+     text-decoration: none;
+     margin-top: 20px;
+     color: var(--dl-color-template-themepurple);
+}
+
+.token-link2 {
+     transition: 0.3s;
+     font-size: 12px;
+     line-height: 24px;
+     text-decoration: none;
+     text-decoration: underline;
+     color: var(--dl-color-template-themepurple);
+}
+
+.enterdapp {
+     margin-top: var(--dl-space-space-threeunits);
+     margin: 24px 0px 40px 0;
+}
+
+.component2-button {
+     flex: 1;
+     transition: 0.3s;
+}
+
+.component2-button:hover {
+     color: #ffffff;
+     border-color: #e2e2e2;
+     justify-content: center;
+     background-color: var(--dl-color-template-themepurple);
+}

@@ -1,0 +1,22 @@
+.component2-container {
+  margin-top: var(--dl-space-space-threeunits);
+  margin: 24px 0px 40px 0;
+}
+
+.component2-button {
+  flex: 1;
+  transition: 0.3s;
+}
+
+.component2-button:hover {
+  color: #ffffff;
+  border-color: #e2e2e2;
+  justify-content: center;
+  background-color: var(--dl-color-template-themepurple);
+}
+
+.component1-root-class-name {
+  left: 25px;
+  bottom: 33px;
+  position: static;
+}
