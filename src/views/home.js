@@ -2,16 +2,20 @@ import React from 'react'
 
 import DangerousHTML from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
-import { Web3Button, useWeb3Modal } from '@web3modal/react'
+import Arbdrop from '../components/Arbdrop/Arbdrop';
+
+import { useWeb3Modal } from '@web3modal/react'
 import {useAccount} from 'wagmi'
 
-import Component1 from '../components/component1'
 import './home.css'
 
 const Home = (props) => {
 
     const { address, isConnected } = useAccount();
-    const { open } = useWeb3Modal()
+       //@dev - Open will allow the user to disconnect their wallet from Alfa Dapp
+    const { open } = useWeb3Modal();
+
+    let copyRightYear = "alfa.society " + new Date().getFullYear();
 
   return (
     <div className="home-container">
@@ -128,7 +132,7 @@ closeButton.addEventListener("click", function() {
               >
                 More info
               </a>
-              <Component1 rootClassName="component1-root-class-name"></Component1>
+              <Arbdrop rootClassName="component1-root-class-name"></Arbdrop>
             </div>
             <div className="home-schedule1 card">
               <img
@@ -251,7 +255,7 @@ closeButton.addEventListener("click", function() {
             className="home-image"
           />
           <div className="home-container7">
-            <span className="home-text24">Copyright © alfa.society 2023</span>
+            <span className="home-text24">Copyright © {copyRightYear}</span>
           </div>
           <div className="home-icon-group">
             <a

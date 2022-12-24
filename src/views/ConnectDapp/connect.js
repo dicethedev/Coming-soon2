@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import './connect.css'
-import Modal from '../../components/Modal/Modal'
+// import Modal from '../../components/Modal/Modal'
 //walletconnect uses wagmi
-import { Web3Button, useWeb3Modal } from '@web3modal/react'
+import { useWeb3Modal } from '@web3modal/react'
 import { useContractRead, useAccount } from "wagmi";
-import contractABI from '../../abi/abi.json'
+import contractABI from '../../abis/abi.json'
 import { toast } from 'react-toastify';
 import { ethers } from "ethers";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +42,7 @@ const connect = () => {
     if (balance >= 5000000) {
      navigate('/alpha-teleporthq')
     } else {
-     toast.warning('You need to be holding atleast 5,000,000 (1%) $ALFA tokens before you can continue! Proceed by getting $ALFA token', {
+     toast.warning('You need to be holding atleast 5,000,000 (1%) $ALFA tokens before you can continue! Proceed by purchasing $ALFA token', {
      position: toast.POSITION.TOP_CENTER,
      autoClose: 9000
     });
